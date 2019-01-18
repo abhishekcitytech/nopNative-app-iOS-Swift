@@ -13,10 +13,49 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navController: UINavigationController?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+    {
+        /*UIFont.familyNames.forEach({ familyName in
+         let fontNames = UIFont.fontNames(forFamilyName: familyName)
+         print(familyName, fontNames)
+         })*/
+        
+        navController = UINavigationController()
+        var obj = login()
+        let screenSize = UIScreen.main.bounds
+        if (screenSize.height == 568.0){
+            //5S
+            //obj = login(nibName: "login5S", bundle: nil)
+        }
+        else if (screenSize.height == 480.0){
+            //5S
+            //obj = login(nibName: "login4S", bundle: nil)
+        }
+        else if(screenSize.height == 667.0){
+            //6
+            obj = login(nibName: "login", bundle: nil)
+        }
+        else if(screenSize.height == 736.0){
+            // 6Plus
+            //obj = login(nibName: "login6Plus", bundle: nil)
+        }
+        else if(screenSize.height == 812.0){
+            //x
+            //obj = login(nibName: "loginX", bundle: nil)
+        }
+        else
+        {
+           // obj = login(nibName: "loginXSMAX", bundle: nil)
+            
+        }
+        self.navController?.pushViewController(obj, animated: false)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window!.rootViewController = navController
+        self.window!.backgroundColor = UIColor.white
+        self.window!.makeKeyAndVisible()
         return true
     }
 
