@@ -70,7 +70,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJz-BO-RYH">
                     <rect key="frame" x="42" y="363" width="292" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.14702519774436951" green="0.35985031723976135" blue="0.72114717960357666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.039215686274509803" green="0.30588235294117649" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                     <state key="normal" title="SIGN IN"/>
                     <connections>

@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Sandipan created brach
         
         //COLOR CODE ---> 919191 (145,145,145)
+        // ---> 0496d2 (4,150,210)
+        // ---> 0a4e84 (10,78,132)
         
         navController = UINavigationController()
         var obj = login()

@@ -148,7 +148,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vW7-9I-pxE">
                     <rect key="frame" x="41" y="433" width="293" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.1470251977" green="0.35985031719999999" blue="0.72114717959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.039215686270000001" green="0.30588235289999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                     <state key="normal" title="REGISTER"/>
                 </button>
