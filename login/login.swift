@@ -10,21 +10,22 @@ import UIKit
 
 class login: UIViewController {
 
-    override func viewDidLoad() {
+    // MARK: - viewWillAppear Method
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+    }
+    
+    // MARK: - viewDidAppear Method
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
+    
+    // MARK: - viewDidLoad method
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
