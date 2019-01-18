@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7E176FE821F1B52A00D04B72 /* AllMediaImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E176FE721F1B52A00D04B72 /* AllMediaImages.xcassets */; };
+		7E176FED21F1C78900D04B72 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E176FEB21F1C78900D04B72 /* Registration.swift */; };
+		7E176FEE21F1C78900D04B72 /* Registration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E176FEC21F1C78900D04B72 /* Registration.xib */; };
+		7E176FF121F1C99700D04B72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E176FF021F1C99700D04B72 /* CoreGraphics.framework */; };
+		7E176FF321F1C99C00D04B72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E176FF221F1C99C00D04B72 /* QuartzCore.framework */; };
 		7EC7B7DE21F1AAA600A9B632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7B7DD21F1AAA600A9B632 /* AppDelegate.swift */; };
 		7EC7B7E021F1AAA600A9B632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7B7DF21F1AAA600A9B632 /* ViewController.swift */; };
 		7EC7B7E321F1AAA600A9B632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC7B7E121F1AAA600A9B632 /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		7E176FE721F1B52A00D04B72 /* AllMediaImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AllMediaImages.xcassets; sourceTree = "<group>"; };
+		7E176FEB21F1C78900D04B72 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		7E176FEC21F1C78900D04B72 /* Registration.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Registration.xib; sourceTree = "<group>"; };
+		7E176FF021F1C99700D04B72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E176FF221F1C99C00D04B72 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7EC7B7DA21F1AAA600A9B632 /* Saudi Fisheries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saudi Fisheries.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC7B7DD21F1AAA600A9B632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EC7B7DF21F1AAA600A9B632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E176FF321F1C99C00D04B72 /* QuartzCore.framework in Frameworks */,
+				7E176FF121F1C99700D04B72 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,14 +61,34 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		7E176FEA21F1C75900D04B72 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				7E176FEB21F1C78900D04B72 /* Registration.swift */,
+				7E176FEC21F1C78900D04B72 /* Registration.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		7E176FEF21F1C99600D04B72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E176FF221F1C99C00D04B72 /* QuartzCore.framework */,
+				7E176FF021F1C99700D04B72 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7EC7B7D121F1AAA500A9B632 = {
 			isa = PBXGroup;
 			children = (
 				7E176FE721F1B52A00D04B72 /* AllMediaImages.xcassets */,
+				7E176FEA21F1C75900D04B72 /* Registration */,
 				7EC7B7F221F1B12000A9B632 /* login */,
 				7E176FE921F1B78100D04B72 /* AppDelegate */,
 				7EC7B7DC21F1AAA600A9B632 /* Saudi Fisheries */,
 				7EC7B7DB21F1AAA600A9B632 /* Products */,
+				7E176FEF21F1C99600D04B72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +184,7 @@
 				7EC7B7E821F1AAE300A9B632 /* Assets.xcassets in Resources */,
 				7EC7B7E321F1AAA600A9B632 /* Main.storyboard in Resources */,
 				7EC7B7F621F1B14400A9B632 /* login.xib in Resources */,
+				7E176FEE21F1C78900D04B72 /* Registration.xib in Resources */,
 				7E176FE821F1B52A00D04B72 /* AllMediaImages.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +199,7 @@
 				7EC7B7E621F1AAA600A9B632 /* Saudi_Fisheries.xcdatamodeld in Sources */,
 				7EC7B7E021F1AAA600A9B632 /* ViewController.swift in Sources */,
 				7EC7B7DE21F1AAA600A9B632 /* AppDelegate.swift in Sources */,
+				7E176FED21F1C78900D04B72 /* Registration.swift in Sources */,
 				7EC7B7F521F1B14400A9B632 /* login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

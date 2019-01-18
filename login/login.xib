@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="login" customModule="Saudi_Fisheries" customModuleProvider="target">
             <connections>
+                <outlet property="btnRegister" destination="fVL-Pa-DZj" id="Doo-Tu-3mS"/>
+                <outlet property="btnSignIn" destination="MJz-BO-RYH" id="Xkj-sj-ueZ"/>
+                <outlet property="btnregister" destination="fVL-Pa-DZj" id="S10-O7-TNc"/>
+                <outlet property="imgvCompanyLogo" destination="tx2-LW-egM" id="6BG-nC-5TB"/>
+                <outlet property="txtEmail" destination="ZWr-WP-0Eg" id="9hW-U6-C5K"/>
+                <outlet property="txtPassword" destination="3et-oj-q0s" id="9O3-yS-fAV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +29,7 @@
                     <rect key="frame" x="72" y="213" width="262" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -31,7 +37,7 @@
                     <rect key="frame" x="72" y="272" width="262" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
@@ -62,19 +68,25 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJz-BO-RYH">
-                    <rect key="frame" x="42" y="363" width="292" height="50"/>
+                    <rect key="frame" x="42" y="363" width="292" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.30588235289999999" green="0.50588235290000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                    <state key="normal" title="Sign In"/>
+                    <color key="backgroundColor" red="0.14702519774436951" green="0.35985031723976135" blue="0.72114717960357666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                    <state key="normal" title="SIGN IN"/>
+                    <connections>
+                        <action selector="pressSignIn:" destination="-1" eventType="touchUpInside" id="gna-PR-rBa"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TK3-F9-8aA">
                     <rect key="frame" x="42" y="424" width="292" height="30"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                     <state key="normal" title="Forgot Password?">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="pressForgotPassword:" destination="-1" eventType="touchUpInside" id="mg4-1d-ciS"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="fVL-Pa-DZj">
                     <rect key="frame" x="42" y="617" width="292" height="30"/>
@@ -83,7 +95,7 @@
                         <attributedString key="attributedTitle">
                             <fragment content="Don't have an account? ">
                                 <attributes>
-                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="15" name="ArialMT"/>
                                 </attributes>
                             </fragment>
@@ -95,17 +107,21 @@
                             </fragment>
                         </attributedString>
                     </state>
+                    <connections>
+                        <action selector="pressRegister:" destination="-1" eventType="touchUpInside" id="6oD-2B-97P"/>
+                    </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="tx2-LW-egM">
-                    <rect key="frame" x="67" y="57" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companylogo" id="tx2-LW-egM">
+                    <rect key="frame" x="128" y="64" width="120" height="120"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.91764705882352937" green="0.9137254901960784" blue="0.9137254901960784" alpha="0.49071596746575341" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-194.40000000000001" y="144.3778110944528"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-230" y="162"/>
         </view>
     </objects>
     <resources>
+        <image name="companylogo" width="120" height="120"/>
         <image name="password" width="24" height="24"/>
         <image name="username" width="24" height="24"/>
     </resources>

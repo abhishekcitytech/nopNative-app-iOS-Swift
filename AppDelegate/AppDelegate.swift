@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Sandipan created brach
         
+        //COLOR CODE ---> 919191 (145,145,145)
+        
         navController = UINavigationController()
         var obj = login()
         let screenSize = UIScreen.main.bounds
